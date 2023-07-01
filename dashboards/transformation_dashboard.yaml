@@ -1,0 +1,42 @@
+# Visit https://docs.rilldata.com/reference/project-files to learn more about Rill project files.
+
+title: "transformation_dashboard"
+model: "transformation"
+default_time_range: ""
+smallest_time_grain: ""
+timeseries: "order_date"
+measures:
+  - label: Total records
+    expression: count(*)
+    name: total_records
+    description: Total number of records present
+    format_preset: humanize
+dimensions:
+  - name: customer_id
+    label: Customer_id
+    column: customer_id
+    description: ""
+  - name: ship_name
+    label: Ship_name
+    column: ship_name
+    description: ""
+  - name: ship_address
+    label: Ship_address
+    column: ship_address
+    description: ""
+  - name: ship_city
+    label: Ship_city
+    column: ship_city
+    description: ""
+  - name: ship_region
+    label: Ship_region
+    column: ship_region
+    description: ""
+  - name: ship_postal_code
+    label: Ship_postal_code
+    column: ship_postal_code
+    description: ""
+  - name: ship_country
+    label: Ship_country
+    column: ship_country
+    description: ""
